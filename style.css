@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Foreground color */
+    margin: 20pt; /* Margin greater than 10pt for all 4 sides */
+    padding: 20px;
+}
+
+.text-container {
+    /* Div surrounding the text */
+}
+
+.link-container {
+    /* Div surrounding the links */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24pt; /* Larger font size for H1 */
+    font-weight: bold; /* Emphasizing importance */
+}
+h2 {
+    color: #666;
+    font-size: 20pt; /* Slightly smaller font size for H2 */
+}
+h3 {
+    color: #888;
+    font-size: 18pt; /* Smallest font size for H3 */
+}
+p {
+    color: #777;
+    font-size: 14pt; /* Font size for paragraphs */
+    line-height: 1.5; /* Improved readability */
+}
+ul, ol {
+    color: #555;
+    margin-left: 20px;
+}
+a {
+    color: #007bff; /* Default color for links */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Color change on hover */
+}
+a:active {
+    color: #ff0000; /* Color change on click */
+}
+a:visited,
+a:link {
+    color: #007bff; /* Same color for visited and non-visited links */
+}
