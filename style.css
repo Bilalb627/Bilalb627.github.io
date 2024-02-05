@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #f2f2f2; 
-    color: #333; 
+    background-color: #f2f2f2;
+    color: #333;
     margin: 15pt;
 }
 
@@ -16,36 +16,28 @@ body {
     padding-right: 20px;
 }
 
-.links-content {
-    width: 200px;
-}
-
 nav {
-    background-color: #ddd; 
+    background-color: #ddd;
     padding: 10px;
 }
 
-nav b {
-    font-weight: bold;
-}
-
 h1, h2, h3 {
-    color: #0066cc; 
+    color: #0066cc;
 }
 
 h1 {
     font-size: 24pt;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
 }
 
 h2 {
-    font-size: 20pt; 
+    font-size: 20pt;
 }
 
 h3 {
-    font-size: 16pt; 
-    color: #990000; 
+    font-size: 16pt;
+    color: #990000;
 }
 
 table {
@@ -62,49 +54,39 @@ td {
     padding: 8px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
 a {
-    color: #009933; 
-    text-decoration: none; 
+    color: #009933;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #0066cc; 
-    text-decoration: underline; 
+    color: #0066cc;
+    text-decoration: underline;
 }
 
 a:active {
-    color: #990000; 
+    color: #990000;
 }
 
 a:visited {
-    color: #663399; 
+    color: #663399;
 }
 
-.course-paragraph {
-    font-size: 14pt; 
-    color: #990000; 
-}
-
-.course-paragraph2{
+.course-paragraph, .course-paragraph2, .awards-paragraph, .activities-paragraph, .small-text {
     font-size: 14pt;
-    color: #333;
 }
 
-.awards-paragraph {
-    font-size: 14pt; 
-    color: #990000; 
+.table-container {
+    display: table;
+    width: 100%;
 }
 
-.activities-paragraph {
-    font-size: 14pt; 
-    color: #0066cc; 
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd;
 }
