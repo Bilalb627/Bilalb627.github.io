@@ -1,0 +1,146 @@
+body { /* Global styling for the entire page */
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #a7c2c7;
+    color: #333;
+    margin: 15pt;
+}
+
+.container {/* Styling for the main content container */
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content { /* Styling for the main text content */
+    flex: 1;
+    padding-right: 20px;
+}
+
+#enlargeImage {
+    width: 150px; 
+    height: auto;
+    display: block;
+    margin-bottom: 20px; 
+}
+
+.enlargeImage {
+    width: 50%; 
+    height: auto;
+    cursor: pointer;
+}
+
+nav { /* Styling for the navigation bar */
+    background-color: #ddd;
+    padding: 10px;
+}
+
+h1, h2, h3 { /* Styling for headings */
+    color: #0066cc;
+}
+
+h1 { /* Specific styling for h1 */
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 { /* Specific styling for h2 */
+    font-size: 20pt;
+}
+
+h3 { /* Specific styling for h3 */
+    font-size: 16pt;
+    color: #990000;
+}
+
+table { /* Styling for tables */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+nav a {
+    font-weight: normal; 
+}
+
+nav a:hover {
+    color: #FF0000; 
+    font-weight: bold; 
+}
+
+table, td { /* Styling for table and table cells */
+    border: 1px solid #ddd;
+}
+
+td { /* Styling for table cells */
+    padding: 8px;
+}
+
+a { /* Styling for hyperlinks */
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover { /* Styling for hyperlink hover state */
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:active { /* Styling for hyperlink active state */
+    color: #990000;
+}
+
+a:visited { /* Styling for visited hyperlinks */
+    color: #000000;
+}
+
+/* Common styling for paragraphs and small text elements */
+.course-paragraph, .course-paragraph2, .awards-paragraph, .activities-paragraph, .small-text {
+    font-size: 14pt;
+}
+
+.table-container { /* Styling for the table container */
+    display: table;
+    width: 100%;
+}
+
+.table-row { /* Styling for table rows */
+    display: table-row;
+}
+
+.table-cell { /* Styling for table cells */
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+nav b { /* Styling for navigation bar bold text */
+    margin-right: 15px; 
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
