@@ -1,0 +1,92 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    background: linear-gradient(to right, #16222A, #3A6073);
+    color: #eee;
+    margin: 15pt;
+    transition: background 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #7da1aa;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #1C262B, #465362);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form section styling */
+h2 {
+    color: #eee;
+}
+
+/* Input styling */
+input[type="text"], textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+/* Styled checkbox */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px; 
+    cursor: pointer;
+    display: inline-block;
+    color: #eee;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px; 
+    height: 16px;
+    border: 1px solid #ccc;
+    background-color: #465362; 
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* Checked state for the custom checkbox */
+input[type="checkbox"]:checked + label:before {
+    background-color: #27ae60; 
+    border: 1px solid #27ae60;
+}
+
+/* Radio button and checkbox label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Submit button styling */
+input[type="submit"], input[type="reset"] {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #219653;
+}
