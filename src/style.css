@@ -183,3 +183,14 @@ nav b {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.clickable-span{
+    font-size: smaller;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clickable-span:hover{
+    color: darkblue;
+}

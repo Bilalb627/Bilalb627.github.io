@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Added console logging for debugging purposes. 
     //console.log(logContent);
+
     document.getElementById("surveyForm").addEventListener("submit", function (event) {
         event.preventDefault();
         submitForm();

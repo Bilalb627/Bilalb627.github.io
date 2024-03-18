@@ -35,7 +35,7 @@ function mouseOver(element){
  * Reset the colour, font weight, and font size of the navigation item on mouseout.
  */
 function mouseOut(element){
-    element.style.color = "#000000";
-    element.style.fontWeight = "normal";
+    element.style.color = "#eee";
+    element.style.fontWeight = "bold";
     element.style.fontSize = "inherit"; 
 }
