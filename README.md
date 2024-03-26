@@ -26,4 +26,4 @@ JavaScript
 
 ## Acknowledgements:
 
-Special thanks to the instructors and peers of the ITM80 course for their guidance and support throughout the development of this project.
+Special thanks to the instructors and peers of the ITM780 course for their guidance and support throughout the development of this project.
