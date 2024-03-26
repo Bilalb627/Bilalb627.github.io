@@ -1,133 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Education</title>
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/main.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Education</title>
-    <link rel="stylesheet" href="src/style.css">
-    <script src="src/main.js" defer></script>
-</head>
+    <body>
+        <div class="container">
+            <div class="text-content">
+                <h1 class="change-font-size">Bilal Bhatti - My Portfolio</h1>
 
-<body>
-    <div class="container">
-        <div class="text-content">
-            <h1>Bilal Bhatti - My Portfolio</h1>
+                <!-- Navigation bar with links and dropdown -->
+                <nav class="change-font-size">
+                    <b>
+                        <a href="pages/about.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About Me</a>
+                        &nbsp;
+                        <a href="https://github.com/Bilalb627" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Github</a>
+                        &nbsp;
+                        <div class="dropdown">
+                            <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Projects</a>
+                            <div class="dropdown-content">
 
-            <!-- Navigation bar with links and dropdown -->
-            <nav>
-                <b>
-                    <a href="pages/about.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About Me</a>
-                    &nbsp;
-                    <a href="https://github.com/Bilalb627" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Github</a>
-                    &nbsp;
-                    <div class="dropdown">
-                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Projects</a>
-                        <div class="dropdown-content">
-                            <a href="pages/projectA.html">Volunteer Activity Coordination System (VACS)
-                                 <span class="clickable-span">(Learn More)</span>
-                            </a>
+                                <a href="pages/projectA.html">Volunteer Activity Coordination System (VACS)
+                                    <span class="clickable-span">(Learn More)</span>
+                                </a>
 
-                            <a href="pages/projectB.html">GLO-BUS Simulation
-                                <span class="clickable-span">(Learn More)</span> 
-                            </a>
+                                <a href="pages/projectB.html">GLO-BUS Simulation
+                                    <span class="clickable-span">(Learn More)</span> 
+                                </a>
 
-                            <a href="pages/projectC.html">Business Intelligence and Analytics - Final Course Project  
-                                <span class="clickable-span">(Learn More)</span> 
-                            </a>
-                            
-                            <a href="pages/projectD.html"">Data and Information Management - Final Course Project  
-                                <span class="clickable-span">(Learn More)</span> 
-                            </a>
+                                <a href="pages/projectC.html">Business Intelligence and Analytics - Final Course Project  
+                                    <span class="clickable-span">(Learn More)</span> 
+                                </a>
+                                
+                                <a href="pages/projectD.html"">Data and Information Management - Final Course Project  
+                                    <span class="clickable-span">(Learn More)</span> 
+                                </a>
+                            </div>
+                        </div>
+                        &nbsp;
+                        <a href="pages/experience.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Experience</a>
+                        &nbsp;
+                        <div class="dropdown">
+                            <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Contact Me</a>
+                            <div class="dropdown-content">
+                                <a href="https://www.instagram.com/bilal.627?igsh=MTA0b2ZzY2xlMG1qYg==">Intagram</a>
+                                <a href="https://www.linkedin.com/in/bilaltahirbhatti/">LinkedIn</a>
+                                <a href="#phone">437-992-1159</a>
+                                <a href="#Email">bilal.bhatti@torontomu.ca</a>
+                            </div>
+                        </div>
+                        &nbsp;
+                        <a href="#skills" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Skills</a>
+                        &nbsp;
+                        <a href="pages/survey.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">User Survey</a>
+                        &nbsp;
+                    </b>
+                </nav>
+                <hr>
+
+                <!-- Image with onclick event to enlarge -->
+                <img src="images/picture.jpg" alt="Profile Image of Bilal" id="enlargeImage" onclick="enlargeImage()" class="enlargeImage">
+
+                <!-- Buttons -->
+                <button onclick="promptName()">Prompt for Name</button>
+
+                <div id="accessibilityOptions" class="accessibility-options">
+                    <button onclick="changeFontSize('increase')">Increase Font Size</button>
+                    <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+                    <button id="speakNameButton" onclick="promptAndSpeakName()">Speak Name</button>
+                    <button id="speakContentButton" onclick="speakAllContent()">Speak Content</button>
+                    <button id="colorBlindModeButton" onclick="toggleColorBlindMode()">Color Blind Mode</button>
+                </div>
+
+                <p id="name"></p>
+                
+                <!-- Section for educational details -->
+                <h2 class="change-font-size">My Education</h2>
+                <table class="change-font-size">
+                    <tr>
+                        <td><strong>High School:</strong> Satec (2016 - 2020)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>University:</strong> Toronto Metropolitan University (2020 - 2024)</td>
+                    </tr>
+                </table>
+
+                <!-- Heading for courses and programs -->
+                <h2 class="change-font-size">Courses/Program</h2>
+                <p class="course-paragraph">My courses at Toronto Metropolitan University were a blend of business and information technology-related subjects, including:</p>
+                <table class="change-font-size">
+                    <tr>
+                        <td >Accounting</td>
+                        <td>Data Management and Security</td>
+                        <td>Business Process Management</td>
+                    </tr>
+                    <tr>
+                        <td>Principles of Marketing</td>
+                        <td>Statistics</td>
+                        <td>Business Law</td>
+                    </tr>
+                </table>
+
+                <p class="course-paragraph2 change-font-size">One course that stood out to me was <em>Data and Information Management (ITM500)</em>. This course delved into the fundamentals of organizing and managing data in databases, allowing for efficient retrieval and analysis of information to support decision-making processes.</p>
+
+                <h2 class="change-font-size">Educational Awards</h2>
+                <p class="awards-paragraph change-font-size">I have earned various boot camp badges during my time at Toronto Metropolitan University, including certifications in Excel, Python, SQL, and Power BI.</p>
+
+                <!-- Table container for LinkedIn and Accredible links -->
+                <div class="table-container change-font-size">
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <h2 class="small-text"><a href="https://www.linkedin.com/in/bilaltahirbhatti/" target="_blank">LinkedIn:</a></h2>
+                        </div>
+                        <div class="table-cell change-font-size">
+                            <p>My LinkedIn profile, where you can view my education history, professional work experience, volunteer experience, and more.</p>
                         </div>
                     </div>
-                    &nbsp;
-                    <a href="pages/experience.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Experience</a>
-                    &nbsp;
-                    <div class="dropdown">
-                        <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Contact Me</a>
-                        <div class="dropdown-content">
-                            <a href="https://www.instagram.com/bilal.627?igsh=MTA0b2ZzY2xlMG1qYg==">Intagram</a>
-                            <a href="https://www.linkedin.com/in/bilaltahirbhatti/">LinkedIn</a>
-                            <a href="#phone">437-992-1159</a>
-                            <a href="#Email">bilal.bhatti@torontomu.ca</a>
+                    <div class="table-row change-font-size">
+                        <div class="table-cell">
+                            <h2 class="small-text"><a href="https://shorturl.at/hiV28" target="_blank">Accredible:</a></h2>
+                        </div>
+                        <div class="table-cell change-font-size">
+                            <p>A certified website where my university certifications/badges can be viewed.</p>
                         </div>
                     </div>
-                    &nbsp;
-                    <a href="#skills" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Skills</a>
-                    &nbsp;
-                    <a href="pages/survey.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">User Survey</a>
-                </b>
-            </nav>
-            <hr>
-
-            <!-- Image with onclick event to enlarge -->
-            <img src="images/picture.jpg" alt="Profile Image" id="enlargeImage" onclick="enlargeImage()" class="enlargeImage">
-
-            <!-- Button to prompt for name -->
-            <button onclick="promptName()">Prompt for Name</button>
-            <p id="name"></p>
-
-            <!-- Section for educational details -->
-            <h2>My Education</h2>
-            <table>
-                <tr>
-                    <td><strong>High School:</strong> Satec (2016 - 2020)</td>
-                </tr>
-                <tr>
-                    <td><strong>University:</strong> Toronto Metropolitan University (2020 - 2024)</td>
-                </tr>
-            </table>
-
-            <!-- Heading for courses and programs -->
-            <h2>Courses/Program</h2>
-            <p class="course-paragraph">My courses at Toronto Metropolitan University were a blend of business and information technology-related subjects, including:</p>
-            <table>
-                <tr>
-                    <td>Accounting</td>
-                    <td>Data Management and Security</td>
-                    <td>Business Process Management</td>
-                </tr>
-                <tr>
-                    <td>Principles of Marketing</td>
-                    <td>Statistics</td>
-                    <td>Business Law</td>
-                </tr>
-            </table>
-
-            <p class="course-paragraph2">One course that stood out to me was <em>Data and Information Management (ITM500)</em>. This course delved into the fundamentals of organizing and managing data in databases, allowing for efficient retrieval and analysis of information to support decision-making processes.</p>
-
-            <h2>Educational Awards</h2>
-            <p class="awards-paragraph">I have earned various boot camp badges during my time at Toronto Metropolitan University, including certifications in Excel, Python, SQL, and Power BI.</p>
-
-            <!-- Table container for LinkedIn and Accredible links -->
-            <div class="table-container">
-                <div class="table-row">
-                    <div class="table-cell">
-                        <h2 class="small-text"><a href="https://www.linkedin.com/in/bilaltahirbhatti/" target="_blank">LinkedIn:</a></h2>
-                    </div>
-                    <div class="table-cell">
-                        <p>My LinkedIn profile, where you can view my education history, professional work experience, volunteer experience, and more.</p>
-                    </div>
                 </div>
-                <div class="table-row">
-                    <div class="table-cell">
-                        <h2 class="small-text"><a href="https://shorturl.at/hiV28" target="_blank">Accredible:</a></h2>
-                    </div>
-                    <div class="table-cell">
-                        <p>A certified website where my university certifications/badges can be viewed.</p>
-                    </div>
-                </div>
+
+                <!-- Heading for extra-curricular activities -->
+                <h2 class="change-font-size">Extra-curricular Activities</h2>
+                <p class="activities-paragraph change-font-size">During my university years, I participated in the Ted Rogers Brand Ambassador program from October 2021 to January 2022. In this role, I contributed to social media marketing campaigns and enhanced stakeholder engagement practices for the university.</p>
             </div>
-
-            <!-- Heading for extra-curricular activities -->
-            <h2>Extra-curricular Activities</h2>
-            <p class="activities-paragraph">During my university years, I participated in the Ted Rogers Brand Ambassador program from October 2021 to January 2022. In this role, I contributed to social media marketing campaigns and enhanced stakeholder engagement practices for the university.</p>
-
         </div>
-    </div>
-</body>
-
+        <!-- Button to toggle accessibility options -->
+        <div class="accessibility-container">
+            <button id="accessibilityButton" onclick="toggleAccessibilityOptions()">
+                <img src="images/accessibility.png" alt="Accessibility Icon">
+            </button>
+        </div>        
+    </body>
 </html>
-
-

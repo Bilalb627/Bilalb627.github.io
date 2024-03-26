@@ -14,12 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var logContent = "Stored Data in Local Storage:\n\n";
 
     for (var key in formData) {
+
         if (Array.isArray(formData[key])) {
+
             if (formData[key].length > 0) {
                 logContent += `${key}: ${formData[key].join(', ')}\n`;
             }
         } 
         else {
+
             if (formData[key]) {
                 logContent += `${key}: ${formData[key]}\n`;
             }
@@ -91,6 +94,7 @@ function submitForm() {
  * Function to get the value of the selected radio button.
  */
 function getRadioValue(name) {
+    
     var radioButtons = document.querySelectorAll('input[name="' + name + '"]:checked');
 
     if (radioButtons.length > 0) {
@@ -120,6 +124,7 @@ function getCheckboxValues(id) {
  * Function to clear/reset the form.
  */
 function clearForm() {
+    
     document.getElementById('surveyForm').reset();
     localStorage.removeItem('formData');
     alert("Form has been cleared.");

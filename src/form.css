@@ -90,3 +90,126 @@ input[type="submit"], input[type="reset"] {
 input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #219653;
 }
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); 
+}
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 1); 
+}
+
+.accessibility-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999; 
+}
+
+.accessibility-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.accessibility-container img {
+    width: 40px; 
+    height: auto; 
+}
+
+.accessibility-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); 
+}
+
+.accessibility-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 1); 
+}
+
+.accessibility-button i {
+    margin-left: 5px; 
+}
+
+#accessibilityButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#accessibilityButton img {
+    width: 40px;
+}
+
+.accessibility-options {
+    position: fixed;
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+}
+
+.accessibility-options button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.accessibility-options button:last-child {
+    margin-bottom: 0;
+}
+
+.color-blind-mode {
+    --cb-primary: #1f77b4; /* Blue */
+    --cb-secondary: #ff7f0e; /* Orange */
+    --cb-tertiary: #2ca02c; /* Green */
+    --cb-quaternary: #d62728; /* Red */
+    --cb-quinary: #9467bd; /* Purple */
+    --cb-senary: #8c564b; /* Brown */
+    --cb-septenary: #e377c2; /* Pink */
+    --cb-octonary: #7f7f7f; /* Gray */
+    --cb-nonary: #bcbd22; /* Olive */
+    --cb-denary: #17becf; /* Teal */
+}
+
+/* Example usage */
+.color-blind-mode h1 {
+    color: var(--cb-primary);
+}
+
+.color-blind-mode a {
+    color: var(--cb-secondary);
+}
+
+.color-blind-mode p {
+    color: var(--cb-tertiary);
+}
+
+.color-blind-mode td{
+    color: var(--cb-quaternary);
+}
+
+.color-blind-mode h2{
+    color: var(--cb-quinary);
+}
+
+.color-blind-mode label{
+    color: var(--cb-senary);
+}

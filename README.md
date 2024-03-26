@@ -1,10 +1,10 @@
-ITM80: Web Design and Management Portfolio Website
+# ITM80: Web Design and Management Portfolio Website
 
-Project Description:
+**Project Description:**
 
 This portfolio website project, developed for the course ITM80: Web Design and Management, serves as a showcase of skills and experiences for Bilal Bhatti. The website includes various sections such as "About Me," "Projects," "Experience," "Contact Me," "Skills," and "User Survey."
 
-Features:
+**Features:**
 
 About Me: Provides a brief introduction to Bilal Bhatti, including his background, education, and interests.
 
@@ -18,13 +18,12 @@ Skills: Lists Bilal's skills and expertise in various domains relevant to web de
 
 User Survey: Includes a link to a user survey, allowing visitors to provide feedback and suggestions.
 
-Technologies Used:
+**Technologies Used:**
 
 HTML5
 CSS3
 JavaScript
 
-Acknowledgements:
+## Acknowledgements:
 
 Special thanks to the instructors and peers of the ITM80 course for their guidance and support throughout the development of this project.
-

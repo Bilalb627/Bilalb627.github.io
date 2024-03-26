@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" type="text/css" href="../src/style.css">
+        <script src="../src/main.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" type="text/css" href="../src/page.css">
-</head>
+    <body>
+        <div id="accessibilityOptions" class="accessibility-options">
+            <button onclick="changeFontSize('increase')">Increase Font Size</button>
+            <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+            <button id="speakContentButton" onclick="speakAllContent()">Speak Content</button>
+            <button id="colorBlindModeButton" onclick="toggleColorBlindMode()">Color Blind Mode</button>
+        </div>
+        <div>
+            <h1 class="change-font-size">GLO-BUS Simulation | Global Business Management</h1>
 
-<body>
+            <h2 class="change-font-size">Description:</h2>
+            <p class="change-font-size">
+                As part of a collaborative group project for the worldwide Business Management course, I
+                participated in the GLO-BUS Simulation, which simulates the experience of operating a virtual
+                firm in a competitive worldwide market. Collaborated closely with coworkers to make strategic
+                decisions across several company departments, acquiring practical expertise in business
+                management and strategy creation.
+            </p>
 
-    <div>
-        <h1>GLO-BUS Simulation | Global Business Management</h1>
+            <h2 class="change-font-size">Key Contributions:</h2>
+            <ul class="change-font-size">
 
-        <h2>Description:</h2>
-        <p>
-            As part of a collaborative group project for the worldwide Business Management course, I
-            participated in the GLO-BUS Simulation, which simulates the experience of operating a virtual
-            firm in a competitive worldwide market. Collaborated closely with coworkers to make strategic
-            decisions across several company departments, acquiring practical expertise in business
-            management and strategy creation.
-        </p>
+                <li class="change-font-size">Team Strategy Development: Collaborated with team members to create and revise our
+                    company&#39;s strategy plan, considering market dynamics, competitive positioning, and resource
+                    restrictions. During team talks, I contributed ideas and insights that helped develop our overall
+                    approach.</li>
+                    <br>
+                <li class="change-font-size">Market Analysis and Research: Conducted market research to better understand customer
+                    preferences, market trends, and the competitive landscape. We used market data and industry
+                    studies to influence our product development and marketing plans, ensuring that they were in
+                    line with market demands.</li>
+                    <br>
+                <li class="change-font-size">Financial Planning and Analysis: Assist with budgeting, forecasting, and financial
+                    performance review. Collaborated with team members to examine financial statements and key
+                    performance indicators, finding opportunities for improvement and optimization.</li>
+                    <br>
+                <li class="change-font-size">Operations Management: Helped optimize operational procedures and resource allocation to
+                    increase efficiency and production. Worked together with team members to execute operational
+                    strategies that were consistent with our company&#39;s aims and objectives.</li>
+                    <br>
+                <li class="change-font-size">Effective Communication and Collaboration: Throughout the simulation, I kept open lines of
+                    contact with my teammates, giving updates, thoughts, and concerns. Actively engaged in team
+                    meetings and discussions to create a friendly and collaborative atmosphere.</li>
+                    <br>
+            </ul>
 
-        <h2>Key Contributions:</h2>
-        <ul>
-            <li>Team Strategy Development: Collaborated with team members to create and revise our
-                company&#39;s strategy plan, considering market dynamics, competitive positioning, and resource
-                restrictions. During team talks, I contributed ideas and insights that helped develop our overall
-                approach.</li>
-                <br>
-            <li>Market Analysis and Research: Conducted market research to better understand customer
-                preferences, market trends, and the competitive landscape. We used market data and industry
-                studies to influence our product development and marketing plans, ensuring that they were in
-                line with market demands.</li>
-                <br>
-            <li>Financial Planning and Analysis: Assist with budgeting, forecasting, and financial
-                performance review. Collaborated with team members to examine financial statements and key
-                performance indicators, finding opportunities for improvement and optimization.</li>
-                <br>
-            <li>Operations Management: Helped optimize operational procedures and resource allocation to
-                increase efficiency and production. Worked together with team members to execute operational
-                strategies that were consistent with our company&#39;s aims and objectives.</li>
-                <br>
-            <li>Effective Communication and Collaboration: Throughout the simulation, I kept open lines of
-                contact with my teammates, giving updates, thoughts, and concerns. Actively engaged in team
-                meetings and discussions to create a friendly and collaborative atmosphere.</li>
-                <br>
-        </ul>
+            <h2 class="change-font-size">Outcome:</h2>
+            <p class="change-font-size"> Participating in the GLO-BUS Simulation was a fantastic learning opportunity for global
+                company management and strategy execution in a team context. Our team successfully
+                navigated hurdles, capitalized on opportunities, and achieved competitive success in the virtual
+                marketplace via effective cooperation and strategic decision-making, exhibiting business
+                acumen and teamwork competency.</p>
+        </div>
 
-        <h2>Outcome:</h2>
-        <p> Participating in the GLO-BUS Simulation was a fantastic learning opportunity for global
-            company management and strategy execution in a team context. Our team successfully
-            navigated hurdles, capitalized on opportunities, and achieved competitive success in the virtual
-            marketplace via effective cooperation and strategic decision-making, exhibiting business
-            acumen and teamwork competency.</p>
-
-    </div>
-
-</body>
-
+        <!-- Button to toggle accessibility options -->
+        <div class="accessibility-container">
+            <button id="accessibilityButton" onclick="toggleAccessibilityOptions()">
+                <img src="../images/accessibility.png" alt="Accessibility Icon">
+            </button>
+        </div>     
+    </body>
 </html>
