@@ -104,29 +104,35 @@ function initializeTextToSpeech() {
     }
 }
 
-
 // Function to read out text content from <h> and <p> tags in the HTML page with a slower speech rate
 function speakAllContent() {
 
-    const headerParagraphElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, td, input, label');
-
-    let allTextContent = '';
-    headerParagraphElements.forEach(element => {
-        allTextContent += element.textContent + ' ';
-    });
-
-    if (allTextContent.trim() !== '') {
-
-        const utterance = new SpeechSynthesisUtterance(allTextContent.trim());
-        utterance.rate = 1; 
-
-        // Speak the text content
-        speechSynthesis.speak(utterance);
+    if (speechSynthesis.speaking) {
+        speechSynthesis.cancel();
     } 
     else {
-        alert('No text content found in <h> and <p> tags.');
+
+        const headerParagraphElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, td, input, label');
+        let allTextContent = '';
+        
+        headerParagraphElements.forEach(element => {
+            allTextContent += element.textContent + ' ';
+        });
+
+        if (allTextContent.trim() !== '') {
+
+            const utterance = new SpeechSynthesisUtterance(allTextContent.trim());
+            utterance.rate = 1;
+
+            // Speak the text content
+            speechSynthesis.speak(utterance);
+        } 
+        else {
+            alert('No text content found in <h> and <p> tags.');
+        }
     }
 }
+
 
 // Function to toggle the visibility of accessibility options
 function toggleAccessibilityOptions() {
