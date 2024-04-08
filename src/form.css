@@ -189,7 +189,6 @@ button:hover {
     --cb-denary: #17becf; /* Teal */
 }
 
-/* Example usage */
 .color-blind-mode h1 {
     color: var(--cb-primary);
 }

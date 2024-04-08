@@ -7,15 +7,6 @@ function promptName(){
 }
 
 /**
- * Enlarge the profile picture when it is clicked.
- */
-function enlargeImage(){
-    var image = document.getElementById("enlargeImage");
-    image.style.width = (image.clientWidth + 250) + "px";
-    image.style.height = (image.clientHeight + 200) + "px";
-}
-
-/**
  * Navigate to the specified URL.
  */
 function navigateTo(url){
@@ -35,7 +26,7 @@ function mouseOver(element){
  * Reset the colour, font weight, and font size of the navigation item on mouseout.
  */
 function mouseOut(element){
-    element.style.color = "#eee";
+    element.style.color = "#333";
     element.style.fontWeight = "bold";
     element.style.fontSize = "inherit"; 
 }
@@ -57,7 +48,6 @@ function changeFontSize(action) {
 
     localStorage.setItem("fontSize", currentSize);
 
-    // Apply the new font size to elements with the change-font-size class
     const elements = document.querySelectorAll(".change-font-size");
     elements.forEach(element => {
         element.style.fontSize = currentSize + "px";
@@ -69,8 +59,8 @@ window.onload = function() {
 
     let currentSize = localStorage.getItem("fontSize");
     currentSize = currentSize ? parseInt(currentSize) : 16;
-
     const elements = document.querySelectorAll(".change-font-size");
+
     elements.forEach(element => {
         element.style.fontSize = currentSize + "px";
     });
@@ -133,7 +123,6 @@ function speakAllContent() {
     }
 }
 
-
 // Function to toggle the visibility of accessibility options
 function toggleAccessibilityOptions() {
 
@@ -162,5 +151,35 @@ function toggleColorBlindMode(){
         document.body.classList.remove("color-blind-mode");
     }
 }
+
+// Function to clear all input fields in the contact form
+function clearFields() {
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}
+
+// Execute the following code when the DOM content is fully loaded
+document.addEventListener("DOMContentLoaded", function(){
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const formObject = {};
+
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+
+        alert("Message Submitted!");
+        localStorage.setItem("formData", JSON.stringify(formObject));
+        contactForm.reset();
+    });
+});
 
 document.addEventListener('DOMContentLoaded', initializeTextToSpeech);
